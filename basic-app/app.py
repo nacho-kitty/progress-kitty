@@ -1,8 +1,10 @@
-from shiny import render, ui
+from shiny import App, render, ui
 from shiny.express import *
 
-ui.panel_title("Progress-kitty!")
 
+app_ui = ui.page_fluid(
+    ui.panel_title("Progress-kitty!")
+)
 
 with ui.layout_columns(col_widths= [3,3,3,3]):
     with ui.card():
